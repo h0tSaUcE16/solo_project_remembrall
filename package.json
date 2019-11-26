@@ -4,17 +4,26 @@
   "description": "Remembrall for Engineers",
   "main": "index.js",
   "scripts": {
+    "start": "node server/server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --config webpack.config.js"
+    "build": "webpack --config webpack.config.js",
+    "dev": "nodemon server/server.js"
   },
   "author": "Joseph Corrado",
   "license": "ISC",
   "dependencies": {
     "react": "^16.12.0",
-    "react-router-dom": "^5.1.2"
+    "react-redux": "^7.1.3",
+    "react-router-dom": "^5.1.2",
+    "redux": "^4.0.4",
+    "redux-devtools-extension": "^2.13.8"
   },
   "devDependencies": {
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.10"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/joeyycorrss/solo_project_remembrall.git"
   }
 }
