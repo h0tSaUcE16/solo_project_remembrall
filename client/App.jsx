@@ -11,6 +11,7 @@
 
 import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom';
+import Home from './components/Home.jsx';
 
 class App extends Component {
   constructor(props) {
@@ -23,9 +24,8 @@ class App extends Component {
         <main>
           <Switch>
             <Route 
-              exact
               path='/'
-              component={}
+              component={Home}
             />
           </Switch>
         </main>

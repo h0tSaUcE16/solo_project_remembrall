@@ -1,0 +1,22 @@
+html {
+  background-color: #800000ca;
+  color: #ffd900ca;
+  }
+
+a {
+  text-decoration: none;
+  color: #000000ca;
+}
+
+button {
+  /* width: 100px; */
+  padding: 10px;
+  border-radius: 10px;
+  margin: 5px;
+}
+
+img {
+  /* width: 561px; */
+  width: 100%;
+
+}

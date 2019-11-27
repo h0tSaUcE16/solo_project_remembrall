@@ -1,0 +1,54 @@
+html {
+background-color: #800000ca;
+color: #ffd900ca;
+}
+
+input {
+  margin: 5px;
+  /* width: 300px; */
+  resize: none;
+}
+
+#title {
+  width: 60%;
+}
+
+#body {
+  height: 99px;
+  width: 95%;
+  margin: 5px;
+  resize: none;
+}
+
+#category {
+  width: 60%;
+}
+
+#submit {
+  width: 100px;
+  display: block;
+}
+
+img {
+  /* width: 561px; */
+  width: 100%;
+}
+
+button {
+  margin: 10px;
+  width: 100px;
+}
+
+button a {
+  text-decoration: none;
+  color: black;
+}
+
+h5 {
+  font-size: 21px;
+}
+
+p {
+  color: white;
+  font-size: 21px;
+}

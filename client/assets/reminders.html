@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTC-8">
+    <title>The Engineer Remembrall Main Page</title>
+    <link rel="stylesheet" type="text/css" href="assets/reminders.css">
+  </head>
+  <body>
+    <h1>Did you forget something?</h1>
+    <hr>
+    <form action="/reminders" method="POST">
+      <input type="text" name="title" id="title" placeholder="Title">
+      <textarea name="body" id="body" placeholder="Body"></textarea>
+      <input type="text" name="category" id="category" placeholder="Category">
+      <input type="submit" id="submit" value="Add Note">
+    </form>
+    <hr>
+    <img src="assets/gifs/nevilleRB2.gif" alt="uh-oh">
+    <hr>
+    <button><a href="/logOff">Log Off</a></button>
+    <hr>
+    <h1>Reminders/Notes/General-Wonderments</h1>
+    <hr>
+    <div id='remindersContainer'></div>
+    <script>
+      let reminders = [];
+      fetch('/reminders/tasks')
+      .then(response => response.json())
+      .then(data => {
+        data.forEach((item) => {
+          // console.log('heh');
+          const container = document.getElementById('remindersContainer');
+          const reminder = document.createElement('div');
+          reminder.className = 'reminder';
+
+          const title = document.createElement('h5');
+          title.className = 'title';
+          title.innerText = 'Title: ' + item.title;
+
+          const body = document.createElement('p');
+          body.className = 'body';
+          body.innerText = 'Body:\n' + item.body;
+
+          const category = document.createElement('h5');
+          category.className = 'category';
+          category.innerText = 'Category: ' + item.subject;
+
+          container.appendChild(reminder);
+          reminder.appendChild(title);
+          reminder.appendChild(body);
+          reminder.appendChild(category);
+          container.appendChild(document.createElement('hr'));
+        });
+      })
+      .catch(error => console.log(error));
+    </script>
+  </body>
+</html>
