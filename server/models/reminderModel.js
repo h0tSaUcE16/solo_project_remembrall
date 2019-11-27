@@ -1,7 +1,7 @@
 const { Pool } = require( 'pg' ); // POSTGRES
 
 // URI FOR POSTGRES DATABASE
-const PG_URI = "";
+const PG_URI = "postgres://ztjdgmdj:u5pbdv7_zgulboEVHjew4W4ae6JnS3Ee@salt.db.elephantsql.com:5432/ztjdgmdj";
 
 // CREATE NEW POOL USING DATABASE URI ABOVE
 const pool = new Pool({

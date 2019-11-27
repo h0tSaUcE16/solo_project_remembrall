@@ -12,7 +12,10 @@
   "author": "Joseph Corrado",
   "license": "ISC",
   "dependencies": {
+    "cookie-parser": "^1.4.4",
     "express": "^4.17.1",
+    "express-session": "^1.17.0",
+    "nodemon": "^2.0.1",
     "pg": "^7.14.0",
     "react": "^16.12.0",
     "react-redux": "^7.1.3",
